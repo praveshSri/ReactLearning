@@ -1,23 +1,64 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Card from "./components/card/Card.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* Row 1 */}
+      <Card
+        container
+        marginBottom="20px"
+        justifyContent="space-between"
+        color="#FFF"
+        textAlign="center"
+      >
+        <Card width="100%" height="100px" backgroundColor="red">
+          <h3>Box One</h3>
+        </Card>
+        <Card width="100%" height="100px" backgroundColor="blue">
+          <h3>Box Two</h3>
+        </Card>
+        <Card width="100%" height="100px" backgroundColor="red">
+          <h3>Box Three</h3>
+        </Card>
+      </Card>
+
+      {/* Row 2 */}
+      <Card
+        container
+        marginBottom="20px"
+        justifyContent="space-between"
+        color="#FFF"
+        textAlign="center"
+      >
+        <Card width="40%" height="100px" backgroundColor="red">
+          <h3>Box One</h3>
+        </Card>
+        <Card width="20%" height="100px" backgroundColor="blue">
+          <h3>Box Two</h3>
+        </Card>
+        <Card width="40%" height="100px" backgroundColor="red">
+          <h3>Box Three</h3>
+        </Card>
+      </Card>
+      {/* Row 3 */}
+      <Card
+        container
+        marginBottom="20px"
+        justifyContent="space-between"
+        color="#FFF"
+        textAlign="center"
+      >
+        <Card width="46%" height="100px" backgroundColor="red">
+          <h3>Box One</h3>
+        </Card>
+        <Card width="8%" height="100px" backgroundColor="blue">
+          <h3>Box Two</h3>
+        </Card>
+        <Card width="46%" height="100px" backgroundColor="red">
+          <h3>Box Three</h3>
+        </Card>
+      </Card>
     </div>
   );
 }
